@@ -4,19 +4,19 @@ import Layout from '../components/Layout';
 //import Image from 'next/image';
 import Link from 'next/link';
 //import hlengiwe from '../assets/hlengiwe.jpg';
-import Servicesa from '../components/Servicesa';
-import About from '../components/About';
-import Pricing from '../components/Pricing';
-import Faq from '../components/Faq';
+//import Servicesa from '../components/Servicesa';
+//import About from '../components/About';
+//import Pricing from '../components/Pricing';
+//import Faq from '../components/Faq';
 
-import Testimonials from '../components/Testimonials';
+//import Testimonials from '../components/Testimonials';
 import { BsStarFill } from 'react-icons/bs';
 
 export default function AboutMe() {
   return (
     <Layout title="About Me - Thando Mav Web">
-      <About />
-      <Servicesa />
+      {/* <About />
+      <Servicesa /> */}
       <section className="relative md:py-24 py-16 bg-gray-50 dark:bg-slate-800">
         <div className="container mx-auto">
           <div className="grid grid-cols-1 pb-8 text-center">
@@ -121,9 +121,9 @@ export default function AboutMe() {
           </div>
         </div>
       </section>
-      <Pricing />
+      {/*<Pricing />
       <Faq />
-      <Testimonials />
+      <Testimonials />*/}
     </Layout>
   );
 }
