@@ -19,13 +19,13 @@ export default function FreebieScreen(props) {
   }
 
   if (!post) {
-    return <Layout title="Post Not Found">Post Not Found</Layout>;
+    return <Layout title="Freebie Not Found">Freebie Not Found</Layout>;
   }
 
   return (
     <Layout title={post.name}>
       <div className="py-2">
-        <Link href="/search-freebies">Back to Posts</Link>
+        <Link href="/search-freebies">Back to Freebies</Link>
       </div>
       <div className="container mx-auto py-12 my-12 mt-8 mb-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
