@@ -53,7 +53,7 @@ export default function AdminPostsScreen() {
       dispatch({ type: 'CREATE_REQUEST' });
       const { data } = await axios.post(`/api/admin/posts`);
       dispatch({ type: 'CREATE_SUCCESS' });
-      toast.success('Product created successfully');
+      toast.success('post created successfully');
       router.push(`/admin/post/${data.product._id}`);
     } catch (err) {
       dispatch({ type: 'CREATE_FAIL' });
@@ -84,16 +84,16 @@ export default function AdminPostsScreen() {
     }
     try {
       dispatch({ type: 'DELETE_REQUEST' });
-      await axios.delete(`/api/admin/posts/${productId}`);
+      await axios.delete(`/api/admin/post/${productId}`);
       dispatch({ type: 'DELETE_SUCCESS' });
-      toast.success('Post deleted successfully');
+      toast.success('post deleted successfully');
     } catch (err) {
       dispatch({ type: 'DELETE_FAIL' });
       toast.error(getError(err));
     }
   };
   return (
-    <Layout title="Admin Posts">
+    <Layout title="Admin posts">
       <div className="grid md:grid-cols-4 md:gap-5">
         <div>
           <ul>
@@ -159,7 +159,6 @@ export default function AdminPostsScreen() {
                     <tr key={product._id} className="border-b">
                       <td className=" p-5 ">{product._id.substring(20, 24)}</td>
                       <td className=" p-5 ">{product.name}</td>
-                      <td className=" p-5 ">${product.price}</td>
                       <td className=" p-5 ">{product.category}</td>
                       <td className=" p-5 ">{product.rating}</td>
                       <td className=" p-5 ">
