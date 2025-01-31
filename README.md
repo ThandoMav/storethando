@@ -7,11 +7,8 @@
 - Content Hosting: cloudinary
 - Deploy: Github, Vercel, MongoDB Atlas
 
-![next storethando](/public/app.jpg)
-
 ## Resources
 
-- Youtube Video : https://youtu.be/_IBlyR5mRzA
 - Demo Website :  https://storethando.vercel.app
 - Source Code   :  https://github.com/ThandoMav/storethando
 
