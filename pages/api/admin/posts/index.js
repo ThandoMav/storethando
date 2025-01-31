@@ -21,6 +21,7 @@ const postHandler = async (req, res) => {
     name: 'sample name',
     slug: 'sample-name-' + Math.random(),
     image: '/images/shirt1.jpg',
+    banner: '/images/shirt1.jpg',
     downloadFile: 'download file',
     category: 'sample category',
     tag: 'sample tag',
@@ -31,7 +32,7 @@ const postHandler = async (req, res) => {
 
   const product = await newProduct.save();
   await db.disconnect();
-  res.send({ message: 'Product created successfully', product });
+  res.send({ message: 'Post created successfully', product });
 };
 const getHandler = async (req, res) => {
   await db.connect();

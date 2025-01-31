@@ -33,6 +33,7 @@ const putHandler = async (req, res) => {
     product.downloadFile = req.body.downloadFile;
     product.category = req.body.category;
     product.image = req.body.image;
+    product.banner = req.body.banner;
     product.tag = req.body.tag;
     product.description = req.body.description;
     await product.save();
